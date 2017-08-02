@@ -1,0 +1,31 @@
+{
+    "name" : "Number Artboards",
+    "description" : "Sketch plugin to number artboards in order",
+    "author" : "Mason Lee",
+    "identifier" : "com.masonlee.sketch.artboard",
+    "version" : "0.1",
+    "authorEmail" : "m.mason.lee@gmail.com",
+    "commands" : [
+        {
+            "script" : "bottomtotop.js",
+            "name" : "Bottom to Top",
+            "handlers" : "onRun",
+            "identifier" : "bottomtotop",
+            "shortcut": "command shift ."
+        },
+        {
+            "script" : "toptobottom.js",
+            "name" : "Top to Bottom",
+            "handlers" : "onRun",
+            "identifier" : "toptobottom",
+            "shortcut": "command shift ,"
+        }
+    ],
+    "menu" : {
+        "title" : "Number Artboards",
+        "items" : [
+            "bottomtotop",
+            "toptobottom"
+        ]
+    }
+}
